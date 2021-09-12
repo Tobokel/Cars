@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'cars',
     'django_filters',
+    'drf_yasg',
 
 
 ]

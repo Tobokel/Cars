@@ -6,7 +6,7 @@ from .models import Region, Category, Car, SubCategory, Like, CarComment
 
 class PersonAdmin(admin.ModelAdmin):
     list_filter = ('id', 'name', 'price', 'steering_wheel')
-    list_display = ('id', 'name', 'author', 'price', 'currency', 'region')
+    list_display = ('id', 'name', 'author', 'price', 'currency', 'region', 'phone_number')
 class CarCommentAdmin(admin.ModelAdmin):
     list_filter = ('id', 'name', 'author', 'text')
     list_display = ('id', 'name', 'author', 'text')

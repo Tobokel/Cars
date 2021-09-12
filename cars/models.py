@@ -57,13 +57,13 @@ class Car(models.Model):
     currency = models.CharField(max_length=24, choices=VALUTA, default='usd')
     price = models.DecimalField(max_digits=10, decimal_places=2)
     image = models.ImageField(upload_to='cars_image', null=True, blank=True)
-
+    phone_number = models.CharField(max_length=15, blank=True)
 
     class Meta:
         db_table = 'car'
 
     def __str__(self):
-        return f'{self.id}, {self.name}, {self.author}, {self.price}, {self.currency}, {self.region}'
+        return f'{self.id}, {self.name}, {self.author}, {self.price}, {self.currency}, {self.region}, {self.phone_number}'
 
 class CarComment(models.Model):
     name = models.ForeignKey(Car,
