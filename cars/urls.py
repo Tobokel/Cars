@@ -8,7 +8,7 @@ router = DefaultRouter()
 
 router.register('information', CarViewSet)
 router.register('comments', CarCommentViewSet)
-router.register('likes', LikeView)
+# router.register('likes', LikeView)
 
 urlpatterns = [
     path('', index),

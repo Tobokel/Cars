@@ -45,11 +45,13 @@ class CarCommentSerializer(serializers.ModelSerializer):
         validated_data['author'] = request.user
         return super().create(validated_data)
 
+
 class LikeSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Like
         fields = '__all__'
+
 
 
 class CarSerializer(serializers.ModelSerializer):

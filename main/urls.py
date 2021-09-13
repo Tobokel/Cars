@@ -43,7 +43,7 @@ schema_view = get_schema_view(
 router = DefaultRouter()
 router.register('information', CarViewSet)
 router.register('comments', CarCommentViewSet)
-router.register('likes', CarCommentViewSet)
+# router.register('likes', CarCommentViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

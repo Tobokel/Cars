@@ -5,7 +5,7 @@ from django.contrib.admin import ModelAdmin
 from .models import Region, Category, Car, SubCategory, Like, CarComment
 
 class PersonAdmin(admin.ModelAdmin):
-    list_filter = ('id', 'name', 'price', 'steering_wheel')
+    list_filter = ('id', 'price', 'steering_wheel', 'currency')
     list_display = ('id', 'name', 'author', 'price', 'currency', 'region', 'phone_number')
 class CarCommentAdmin(admin.ModelAdmin):
     list_filter = ('id', 'name', 'author', 'text')
